@@ -1,0 +1,14 @@
+Assembly Variant Service has detected improper attribute values
+
+Wed Oct 24 00:03:42 2018
+
+Current Job : 1909A_Rev2.pcb
+
+
+Format:
+OBJ_NAME
+OLD_VALUE{EMPTY;TOO_LONG}
+NEW_VALUE{DELETED;TOO_LONG}
+RESUME
+
+
