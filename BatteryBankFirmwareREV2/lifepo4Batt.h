@@ -6,7 +6,7 @@
 class Lifepo4Batt
 {
     public:
-        int getBatLvl();
+        int getBattLvl();
         void indicateBatLvl();
         int checkBattandCharge(int vBatMeasurePin);
         int vBat;

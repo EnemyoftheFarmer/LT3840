@@ -16,8 +16,8 @@ pinMode(currentSetPin, OUTPUT);
 pinMode(vBatMeasurePin, INPUT);
 pinMode(wakeUpOutputtoUSBPin, INPUT);
 pinMode(wakeUpChargePin, INPUT);
-Serial.begin(115200);
-Serial.println("Initialization done");
+//Serial.begin(115200);
+//Serial.println("Initialization done");
 
 }
 
@@ -28,7 +28,7 @@ if(chargeStatus == true){
 if(outputStatus == true){
   usbCharge();
 }
-  Serial.println("Going to Sleep");
+  //Serial.println("Going to Sleep");
 delay(100);                                         //Give serial com. time to communicate
 sleepNow();
 
@@ -49,12 +49,12 @@ void checkBattandCharge(){
     }
   }
   chargeStatus = false;                             //ensures that the battery won't start charging and outputing after a repeated interrupt
-  Serial.println("Charging Complete");
+  //Serial.println("Charging Complete");
 }
 
 void usbCharge(){                           //output 5V on USB
  int i;
- Serial.println("Charging Phone");
+ //Serial.println("Charging Phone");
  while(i > 0){
   indicateBatLvl();
   //close some switch to allow 5v output
@@ -132,7 +132,7 @@ void indicateBatLvl(){           //Lights up the fuel guage and set charge curre
    digitalWrite(led75, LOW);
    digitalWrite(led50, LOW);
    digitalWrite(led25, LOW);
-   Serial.println(vBat);                            
+   //Serial.println(vBat);                            
 }
 
 
