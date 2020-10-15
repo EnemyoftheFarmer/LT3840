@@ -4,7 +4,6 @@ RMS out current 5.9A
 Max ESR out -1.3 miliohms
 Applied VoltuSec = 7.2
 
-.009367
 
 back of the envelop math dissapate 1.9w
 
